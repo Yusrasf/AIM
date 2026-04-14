@@ -1,0 +1,26 @@
+*** Causal Estimate ***
+
+## Identified estimand
+Estimand type: EstimandType.NONPARAMETRIC_ATE
+
+### Estimand : 1
+Estimand name: backdoor
+Estimand expression:
+   d                            
+────────(E[T2D|Diet,Age,PA,Sex])
+d[Obese]                        
+Estimand assumption 1, Unconfoundedness: If U→{Obese} and U→T2D then P(T2D|Obese,Diet,Age,PA,Sex,U) = P(T2D|Obese,Diet,Age,PA,Sex)
+
+## Realized estimand
+b: T2D~Obese+Diet+Age+PA+Sex
+Target units: ate
+
+## Estimate
+Mean value: 0.13900476911058993
+
+
+Refutation Result:
+Refute: Use a Placebo Treatment
+Estimated effect:0.13900476911058993
+New effect:-0.00046686567837465025
+p value:0.98
