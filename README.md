@@ -104,6 +104,12 @@ From [causal_results.txt](d:/MASTER/Semester%202/Artificial%20Intelligence%20in%
 
 This supports that the estimated effect is not reproduced by a random placebo treatment.
 
+### Re-run Update (2026-06-02)
+
+- Re-ran the causal analysis (`AIM.py`) on the current cleaned dataset.
+- Estimated ATE remains approximately `0.139`.
+- Placebo treatment refutation result: `p-value = 0.94`, supporting robustness.
+
 ## Requirements
 
 Install the required Python packages:

@@ -7,20 +7,20 @@ Estimand type: EstimandType.NONPARAMETRIC_ATE
 Estimand name: backdoor
 Estimand expression:
    d                            
-────────(E[T2D|Diet,Age,PA,Sex])
+────────(E[T2D|Diet,Sex,PA,Age])
 d[Obese]                        
-Estimand assumption 1, Unconfoundedness: If U→{Obese} and U→T2D then P(T2D|Obese,Diet,Age,PA,Sex,U) = P(T2D|Obese,Diet,Age,PA,Sex)
+Estimand assumption 1, Unconfoundedness: If U→{Obese} and U→T2D then P(T2D|Obese,Diet,Sex,PA,Age,U) = P(T2D|Obese,Diet,Sex,PA,Age)
 
 ## Realized estimand
-b: T2D~Obese+Diet+Age+PA+Sex
+b: T2D~Obese+Diet+Sex+PA+Age
 Target units: ate
 
 ## Estimate
-Mean value: 0.13900476911058993
+Mean value: 0.13900476911280696
 
 
 Refutation Result:
 Refute: Use a Placebo Treatment
-Estimated effect:0.13900476911058993
-New effect:-0.00046686567837465025
-p value:0.98
+Estimated effect:0.13900476911280696
+New effect:0.002898783675097807
+p value:0.94
