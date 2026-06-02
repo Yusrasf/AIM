@@ -10,6 +10,8 @@ The workflow has two main stages:
 
 ## Project Overview
 
+
+
 The analysis uses obesity as the treatment variable and T2D as the outcome:
 
 - Treatment: `Obese` (`BMI >= 30`)
